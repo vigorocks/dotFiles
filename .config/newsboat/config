@@ -1,0 +1,27 @@
+# config
+
+# Keybindings
+bind-key h quit
+bind-key j down
+bind-key k up
+bind-key l open
+
+# Disabled keybindings
+unbind-key q
+unbind-key ENTER
+
+# Settings
+auto-reload yes
+
+# Colors
+color background          color236  default
+color listnormal          color248  default
+color listnormal_unread   color248  default
+color listfocus           color236  color12
+color listfocus_unread    color236  color12
+color info                color255  color236
+color article             color255  default
+
+highlight article "^(Feed|Link):.*$" color255 default bold
+highlight article "^(Title|Date|Author):.*$" color255 default bold
+highlight article "https?://[^ ]+" color255 default underline
