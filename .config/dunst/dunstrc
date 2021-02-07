@@ -1,4 +1,4 @@
-  [global]
+[global]
         monitor = 0
         follow = keyboard
         geometry = "225x50-6+25"
