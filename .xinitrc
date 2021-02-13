@@ -2,7 +2,7 @@
 # .xinitrc
 
 while true; do
-	xsetroot -name "$(date +"%A, %B %d %R")"
+	statusBar
 	sleep 1
 done &
 dunst &
