@@ -1,13 +1,14 @@
 # .zshrc
 
 # Prompt
-autoload -U colors && colors
-PROMPT="%n%F{208}@%F{1}%M%F{255}:~$ "
+PS1="$ "
+PS2="> "
 
 # Defaults
 export TERMINAL="st"
-export EDITOR="vim"
-export VISUAL="vim"
+export EDITOR="nvim"
+export VISUAL="nvim"
+export PAGER="less"
 export READER="zathura"
 
 # History 
@@ -22,15 +23,14 @@ zmodload zsh/complist
 
 # Tab completion keybindings
 bindkey -M menuselect "h" vi-backward-char
+bindkey -M menuselect "j" vi-down-line-or-history
 bindkey -M menuselect "k" vi-up-line-or-history
 bindkey -M menuselect "l" vi-forward-char
-bindkey -M menuselect "j" vi-down-line-or-history
 
 # Aliases
-alias ls="ls --color=auto"
+alias ls="ls -hN --color=auto"
 alias grep="grep --color=auto"
 alias cp="cp -v"
 alias mv="mv -v"
 alias rm="rm -v"
 alias pm="pulsemixer"
-alias nnn="nnn -edH"
